@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Online Calculator by @Kieza17</title>
+
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Viga&display=swap" rel="stylesheet">
+  <link rel="icon" href="img/kalkulator.png">
+
+</head>
+
+<body>
+  <div class="bg"></div>
+  <div class="main">
+    <h2>Calculator</h2>
+    <form name="form">
+      <input class="textarea" name="textarea" disabled>
+    </form>
+    <table>
+      <tr>
+        <td><input class="button" type="button" value="AC" onclick="clean()"></td>
+        <td><input class="button" type="button" value="C" onclick="back()"></td>
+        <td><input class="button btn-green" type="button" value="/" onclick="insert(' / ')"></td>
+        <td><input class="button btn-green" type="button" value="x" onclick="insert(' * ')"></td>
+      </tr>
+      <tr>
+        <td><input class="button" type="button" value="7" onclick="insert(7)"></td>
+        <td><input class="button" type="button" value="8" onclick="insert(8)"></td>
+        <td><input class="button" type="button" value="9" onclick="insert(9)"></td>
+        <td><input class="button btn-green" type="button" value="-" onclick="insert(' - ')"></td>
+      </tr>
+      <tr>
+        <td><input class="button" type="button" value="4" onclick="insert(4)"></td>
+        <td><input class="button" type="button" value="5" onclick="insert(5)"></td>
+        <td><input class="button" type="button" value="6" onclick="insert(6)"></td>
+        <td><input class="button btn-green" type="button" value="+" onclick="insert(' + ')"></td>
+      </tr>
+      <tr>
+        <td><input class="button" type="button" value="1" onclick="insert(1)"></td>
+        <td><input class="button" type="button" value="2" onclick="insert(2)"></td>
+        <td><input class="button" type="button" value="3" onclick="insert(3)"></td>
+        <td rowspan=2><input style="height:106px;" class="button btn-green" type="button" value="=" onclick="equal()">
+        </td>
+      </tr>
+      <tr>
+        <td><input class="button" type="button" value="0" onclick="insert(0)"></td>
+        <td><input class="button" type="button" value="00" onclick="insert('00')"></td>
+        <td><input class="button" type="button" value="." onclick="insert('.')"></td>
+      </tr>
+    </table>
+    <h3 align="center"><a style="color: brown;" href="https://instagram.com/_calyza">@Kieza17</a></h3>
+    <h5 align="center"><a href="https://youtu.be/kkBYasJbs3I">Turtorial</a></h5>
+  </div>
+  </div>
+
+  <!-- Script -->
+  <script src="js/script.js"></script>
+
+</body>
+
+</html>
